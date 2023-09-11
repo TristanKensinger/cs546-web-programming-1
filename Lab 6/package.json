@@ -1,0 +1,17 @@
+{
+  "name": "cs-546-lab-6",
+  "version": "1.0.0",
+  "description": "Tristan Kensinger Lab 6",
+  "main": "app.js",
+  "scripts": {
+    "seed": "node ./tasks/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Tristan Kensinger 10443340",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.0"
+  }
+}

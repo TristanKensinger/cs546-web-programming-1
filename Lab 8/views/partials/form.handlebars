@@ -1,0 +1,12 @@
+<article>
+    <h1>Show Finder</h1>
+    <p>
+        This website utilizes HTML, CSS, and Handlebars to make a templated website. <br>
+        Users can enter data into a form to search through the TV Maze API. <br>
+    </p>
+    <form action="/searchshows" method="POST">
+        <label for="inputTerm">Enter Search Term Below</label><br>
+        <input type="text" name="showSearchTerm" id="inputTerm" placeholder="e.g. doctor" value="{{searchTerm}}" autocomplete="off"/>
+        <button type="submit">Search Term</button>
+    </form>
+</article>

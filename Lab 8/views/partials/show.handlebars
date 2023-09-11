@@ -1,0 +1,58 @@
+<article>
+    <h1>{{show.name}}</h1>
+    {{#if show.image.medium}}
+        <img src="{{show.image.medium}}" alt="Show Image">
+    {{else}}
+        <img src="../../public/imgs/no_img.png" alt="No Image Available">
+    {{/if}}
+    <dl>
+        <dt>Language</dt>
+        <dd class="border">
+            {{#if show.language}}
+                {{show.language}}
+            {{else}}
+                N/A
+            {{/if}}
+        </dd>
+
+        <dt>Genres</dt>
+        <dd>
+            {{#if show.genres}}
+                <ul>
+                    {{#each show.genres}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            {{else}}
+                N/A
+            {{/if}}
+        </dd>
+
+        <dt>Average Rating</dt>
+        <dd class="border">
+            {{#if show.rating.average}}
+                {{show.rating.average}}
+            {{else}}
+                N/A
+            {{/if}}
+        </dd>
+
+        <dt>Network</dt>
+        <dd class="border">
+            {{#if show.network.name}}
+                {{show.network.name}}
+            {{else}}
+                N/A
+            {{/if}}
+        </dd>
+
+        <dt>Summary</dt>
+        <dd>
+            {{#if show.summary}}
+                {{{show.summary}}}
+            {{else}}
+                N/A
+            {{/if}}
+        </dd>
+    </dl>
+</article>

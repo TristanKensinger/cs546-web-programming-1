@@ -1,0 +1,17 @@
+<section class="searchshows">
+    <h1>Shows Found</h1>
+    <h2>{{showSearchTerm}}</h2>
+    <ul>
+        {{#each shows}}
+            <li>
+                <a href="/show/{{show.id}}">{{show.name}}</a>
+            </li>
+        {{/each}}
+    </ul>
+    {{#unless shows}}
+        <p class="show-not-found">We're sorry, but no results were found for {{showSearchTerm}}.</p>
+    {{/unless}}
+    <div class="return-div">
+        <a class="return" href="/">Make another search</a>
+    </div>
+</section>
